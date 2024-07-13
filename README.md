@@ -53,7 +53,7 @@
 1. **Instalar dependencias:**
 
    ```bash
-   yarn start:dev
+   yarn install
    ```
 
 2. **Ejecutar el proyecto:**
