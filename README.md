@@ -5,7 +5,7 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-### Pasos para Configurar Firebase con Emuladores de Firebase
+### Pasos para Configurar Firebase con Emuladores
 
 1. **Instala el Firebase CLI:**
 
