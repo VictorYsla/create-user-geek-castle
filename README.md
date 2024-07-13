@@ -25,14 +25,28 @@
 
 4. **Configura tu aplicación NestJS para conectarse al emulador:**
 
-   - Establece las credenciales y URL del emulador en tu configuración. Asegúrate de incluir estas líneas en la configuración de tu aplicación NestJS:
+   - Ejecutar en la consola de preferencia el comando para correr los emuladores necesarios:
+
+   ```typescript
+   firebase emulators:start --only firestore,auth
+   ```
+
+   - Establece las credenciales y URL del emulador en tu configuración. Asegúrate de incluir estas líneas en la configuración ():
 
    ```typescript
    firebase.initializeApp({
      projectId: process.env.PROJECTID,
    });
-   process.env.FIREBASE_AUTH_EMULATOR_HOST = '127.0.0.1:9099';
-   process.env.FIRESTORE_EMULATOR_HOST = '127.0.0.1:8080';
+   process.env.FIREBASE_AUTH_EMULATOR_HOST = '127.0.0.1:9099' (localhost:9099); //Asegúrarse de colocar los valores correctos
+   process.env.FIRESTORE_EMULATOR_HOST = '127.0.0.1:8080'(localhost:8080); //Asegúrarse de colocar los valores correctos
+
+   ┌────────────────┬────────────────┬─────────────────────────────────┐
+   │ Emulator       │ Host:Port      │ View in Emulator UI             │
+   ├────────────────┼────────────────┼─────────────────────────────────┤
+   │ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+   ├────────────────┼────────────────┼─────────────────────────────────┤
+   │ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+   └────────────────┴────────────────┴─────────────────────────────────┘
    ```
 
 5. **Ejecuta los emuladores necesarios con el comando:**
