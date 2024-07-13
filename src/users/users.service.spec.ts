@@ -3,7 +3,8 @@ import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import * as firebase from 'firebase-admin';
 import * as bcrypt from 'bcrypt';
-import { charset, generatePassword } from './functions';
+import { generatePassword } from './functions';
+import { charset } from './constans';
 
 const firebaseAuthMock = {
   createUser: jest.fn().mockResolvedValue({

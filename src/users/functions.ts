@@ -1,5 +1,4 @@
-export const charset =
-  'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
+import { charset } from './constans';
 
 export const generatePassword = (): string => {
   const length = 8;
